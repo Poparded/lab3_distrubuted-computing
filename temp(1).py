@@ -69,7 +69,7 @@ fitted_model = model.fit()
 # Make predictions on the test data
 forecast = fitted_model.forecast(steps=len(test))
 
-# Before plotting, convert the PeriodIndex back to DatetimeIndex
+# Before plotting, convert thfe PeriodIndex back to DatetimeIndex
 train.index = train.index.to_timestamp()
 test.index = test.index.to_timestamp()
 forecast.index = forecast.index.to_timestamp()
